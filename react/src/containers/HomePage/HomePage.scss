@@ -1,0 +1,209 @@
+.slick-prev {
+    // border: 1px solid orange !important;
+    // position: relative !important;
+    left: -10px !important;
+    z-index: 10;
+    height: 48px !important;
+    width: 44px !important;
+    // background-color: green !important;
+
+    background: #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:hover {
+        background: #ece7e7 !important;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: FontAwesome !important;
+    color: red !important;
+    // content: "\f060" !important;
+    // content: "\e258" !important;
+}
+
+.slick-next {
+    border: 1px solid rgb(255, 0, 153) !important;
+    right: -10px !important;
+    height: 48px !important;
+    width: 44px !important;
+    z-index: 10;
+    background: #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:hover {
+        background: #ece7e7 !important;
+    }
+}
+
+.section-share {
+    &.section-specialty {
+        background: #f5f5f5;
+    }
+
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
+    &.section-about {
+        // border: 1px solid red;
+        height: 500px !important;
+        border-top: 1px solid #f5f5f5;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .section-body {
+
+        // border: 1px solid orange;
+        .section-customize {
+            .bg-image {
+                height: 150px;
+                width: 278px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #eee;
+
+                &.section-specialty {
+                    background-image: url('../../assets/specialty/co-xuong-khop.jpg');
+                }
+
+                &.section-medical-facility {
+                    background-image: url('../../assets/medical-facility/thucuc.jpeg');
+                }
+
+                &.section-outstanding-doctor {
+                    background-image: url('../../assets/outstanding-docotr/alibaba.jpg');
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook {
+                    background-image: url('../../assets/handbook/camnang.jpg');
+                }
+            }
+        }
+    }
+}
+
+.section-share {
+    height: 330px;
+
+    // border: 1px solid red;
+    .section-container {
+        margin: 0 60px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            height: 60px;
+            // border: 1px solid green;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            // display: flex;
+            .title-section {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float: right;
+                padding: 10px 15px;
+                display: block;
+                outline: none;
+                border: none;
+                background: #ebebeb;
+                color: black;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+    }
+}
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+
+        .customize-border {
+            border: 1px solid orange;
+            padding: 20px;
+        }
+    }
+}
+
+.home-footer {
+    padding-top: 8px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.section-about {
+    padding: 0 100px;
+
+    .section-about-header {
+        padding: 20px 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .section-about-content {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        .content-left {
+            width: 60%;
+        }
+
+        .content-right {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            flex-direction: column;
+            // text-align: center;
+            justify-content: center;
+
+            p {
+                text-align: justify;
+                font-style: italic;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .about-icon {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                .content-icon {
+                    padding: 5px;
+                    cursor: pointer;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//reset slick css:
